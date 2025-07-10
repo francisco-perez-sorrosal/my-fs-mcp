@@ -1,5 +1,19 @@
 # My MCP for Filesystem Access for Claude
 
+## References
+
+[Claude Desktop Extensions](https://www.anthropic.com/engineering/desktop-extensions)
+
+## TL;DR
+
+Create dxt bundle with:
+
+```sh
+make
+```
+
+Drag `dxt-package/my-fs-mcp.dxt` to `Claude/Settings.../Extensions` to install bundle.
+
 ## Dev
 
 ### Requirements

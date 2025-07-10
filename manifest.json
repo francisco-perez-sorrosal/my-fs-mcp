@@ -17,15 +17,28 @@
       ],
       "env": {
         "DEBUG": "${user_config.debug}",
-        "PYTHONPATH": "${__dirname}/server/lib"
+        "PYTHONPATH": "${__dirname}/server/lib",
+        "HOME": "/Users/fperez"
       }
     }
   },
   "tools": [
     {
+      "name": "list_workspaces",
+      "description": "Returns the list of directories (workspaces) that this server is allowed to access."
+    },
+    {
       "name": "ls",
-      "description": "List files in a directory"
-    }
+      "description": "List files in a directory with metadata"
+    },
+    {
+      "name": "mkdir",
+      "description": "Create a directory at the given path. If overwrite is True, remove and recreate if it exists. Safety: disallows absolute paths and parent-relative paths"
+    },
+    {
+      "name": "file_info",
+      "description": "Get meta-information of a file or directory"
+    }    
   ],  
   "keywords": [
     "python",
@@ -40,7 +53,7 @@
       "type": "directory",
       "title": "Workspace Directory",
       "description": "Directory to use as workspace",
-      "default": "${HOME}/Documents",
+      "default": "${HOME}/Bonkers",
       "required": false
     },
     "debug": {
